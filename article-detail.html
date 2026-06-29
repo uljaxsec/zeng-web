@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="前端技术文章详情">
+  <title>技术文章详情</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="主导航">
+      <a class="brand" href="index.html#home" aria-label="返回首页">
+        <span class="brand-mark">FE</span>
+        <span class="brand-text">前端个人站</span>
+      </a>
+      <div class="nav-links article-detail-nav">
+        <a href="index.html#home">首页</a>
+        <a class="active" href="index.html#articles">技术文章</a>
+        <a href="index.html#projects">项目作品</a>
+        <a href="index.html#about">关于我</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="article-page">
+    <article class="article-detail">
+      <a class="back-link" href="index.html#articles">返回文章列表</a>
+      <p class="eyebrow" id="articleCategory">Blog</p>
+      <h1 id="articleTitle">技术文章</h1>
+      <p class="article-summary" id="articleSummary"></p>
+      <div class="markdown-body" id="articleContent"></div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 前端个人站. Built for clean web experiences.</p>
+  </footer>
+
+  <script src="articles.js"></script>
+  <script src="article-detail.js"></script>
+</body>
+</html>

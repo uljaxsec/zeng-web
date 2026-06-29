@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="前端工程师个人网站，展示技术文章、项目作品和个人经历。">
+  <title>前端工程师个人网站</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="主导航">
+      <a class="brand" href="#home" aria-label="返回首页">
+        <span class="brand-mark">FE</span>
+        <span class="brand-text">前端个人站</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#home">首页</a>
+        <a href="#articles">技术文章</a>
+        <a href="#projects">项目作品</a>
+        <a href="#about">关于我</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Frontend Engineer</p>
+        <h1>专注 Web 前端体验、工程质量与业务交付</h1>
+        <p class="hero-intro">我是一名前端工程师、擅长 H5、CSS3 开发，拥有丰富的 Vue2、Vue3 开发经验，熟悉性能优化。当前在重点关注后端开发、AI 编程，对 Java 开发也有一定的经验。</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#projects">查看项目</a>
+          <a class="secondary-btn" href="#articles">阅读文章</a>
+        </div>
+      </div>
+      <div class="profile-panel" aria-label="个人能力概览">
+        <div class="profile-card">
+          <span class="panel-label">Focus</span>
+          <strong>Vue / H5 / 性能优化</strong>
+          <p>从业务页面到大屏系统，关注稳定、清晰、可维护的前端实现。</p>
+        </div>
+        <div class="metric-grid">
+          <div><strong>8+</strong><span>年前端经验</span></div>
+          <div><strong>4</strong><span>核心项目方向</span></div>
+          <div><strong>AI</strong><span>编程探索</span></div>
+          <div><strong>Java</strong><span>后端经验</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-section" aria-labelledby="featured-articles-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Writing</p>
+        <h2 id="featured-articles-title">精选文章</h2>
+      </div>
+      <div class="card-grid article-grid">
+        <a class="article-card" href="article-detail.html?id=01"><span>JavaScript</span><h3>js手写深拷贝</h3><p>手写一个支持对象、数组、Map、Set、Promise、正则和日期的深拷贝方法。</p></a>
+        <a class="article-card" href="article-detail.html?id=02"><span>Vue</span><h3>在 vue 中手写虚拟列表</h3><p>通过固定容器高度和动态渲染可视区域数据，降低长列表 DOM 压力。</p></a>
+        <a class="article-card" href="article-detail.html?id=04"><span>工程化</span><h3>如何把本地项目提交到 github</h3><p>记录 SSH Key 配置、GitHub 仓库创建和本地项目提交的完整流程。</p></a>
+        <a class="article-card" href="article-detail.html?id=05"><span>可视化</span><h3>使用 rem 适配大屏</h3><p>使用 rem 思路适配 1920 与 4K 大屏，并处理 ECharts 尺寸缩放。</p></a>
+      </div>
+    </section>
+
+    <section class="section featured-section" aria-labelledby="featured-projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Projects</p>
+        <h2 id="featured-projects-title">精选项目</h2>
+      </div>
+      <div class="card-grid project-grid">
+        <a class="project-card" href="project-detail.html?id=iot"><div class="project-icon">IOT</div><h3>物联设备管理</h3><p>统一管理园区内可联网设备，为 IBMS 提供设备数据、地图标点、告警规则和子系统绑定支撑。</p></a>
+        <a class="project-card" href="project-detail.html?id=ibms"><div class="project-icon">IBMS</div><h3>系统集成运维</h3><p>面向园区综合运维，集中展示园区运行数据，并统一管理视频、电梯、电力等子系统。</p></a>
+        <a class="project-card" href="project-detail.html?id=ioc"><div class="project-icon">IOC</div><h3>数字孪生大屏展示</h3><p>以园区全景式 3D 场景为核心，结合 WebRTC 实时模型画面展示综合态势数据。</p></a>
+        <a class="project-card" href="project-detail.html?id=som"><div class="project-icon">SOM</div><h3>综合服务</h3><p>包含 Web 后台和小程序端，提供投诉建议、资讯公告、访客管理等园区服务能力。</p></a>
+      </div>
+    </section>
+
+    <section class="section articles-section" id="articles">
+      <div class="section-heading">
+        <p class="eyebrow">Blog</p>
+        <h2>技术文章</h2>
+        <p>把框架实践、问题排查和工程经验沉淀成可复用的知识库。</p>
+      </div>
+      <div class="topic-list article-list" id="articleList" aria-label="技术文章列表"></div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Work</p>
+        <h2>项目作品</h2>
+        <p>项目覆盖物联网、集成运维、数字孪生大屏和综合服务管理等业务场景。</p>
+      </div>
+      <div class="work-list">
+        <a href="project-detail.html?id=iot"><div><span>IOT</span><h3>物联设备管理</h3></div><p>统一管理园区内可联网设备，为 IBMS 提供设备数据、地图标点、告警规则和子系统绑定支撑。</p></a>
+        <a href="project-detail.html?id=ibms"><div><span>IBMS</span><h3>系统集成运维</h3></div><p>面向园区综合运维，集中展示园区运行数据，并统一管理视频、电梯、电力等子系统。</p></a>
+        <a href="project-detail.html?id=ioc"><div><span>IOC</span><h3>数字孪生大屏展示</h3></div><p>以园区全景式 3D 场景为核心，结合 WebRTC 实时模型画面展示综合态势数据。</p></a>
+        <a href="project-detail.html?id=som"><div><span>SOM</span><h3>综合服务</h3></div><p>包含 Web 后台和小程序端，提供投诉建议、资讯公告、访客管理等园区服务能力。</p></a>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-layout">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>关于我</h2>
+          <p class="about-intro">2016 年东北石油大学毕业，现居深圳，专注 Web 前端偏前领域。长期参与业务系统、管理平台、可视化大屏与移动端 H5 开发，重视用户体验、工程质量和持续交付。</p>
+        </div>
+        <div class="about-details">
+          <article><h3>技术栈</h3><div class="tag-group"><span>Node</span><span>React</span><span>Vue</span><span>TypeScript</span><span>工程化</span><span>性能优化</span></div></article>
+          <article><h3>项目经历概览</h3><p>参与过 IOT 物联设备管理、IBMS 系统集成运维、IOC 数字孪生大屏展示、SOM 综合服务等项目，熟悉从需求理解、页面开发到性能优化和上线交付的完整流程。</p></article>
+          <article class="contact-card"><h3>联系方式</h3><a href="tel:17688997815">17688997815</a><a href="mailto:uljaxsec1991@163.com">uljaxsec1991@163.com</a></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 前端个人站. Built for clean web experiences.</p>
+  </footer>
+
+  <script src="articles.js"></script>
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
